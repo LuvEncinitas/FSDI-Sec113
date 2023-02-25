@@ -5,7 +5,7 @@ from django.urls import reverse
 class Post(models.Model):
     title = models.CharField(max_length=128)
     subtitle = models.CharField(max_length=128)
-    autor = models.ForeignKey(
+    author = models.ForeignKey(
         'auth.User',
         on_delete=models.CASCADE
     )
