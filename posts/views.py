@@ -9,7 +9,7 @@ from .models import Post
 from django.urls import reverse_lazy
 
 
-class PostView(ListView):
+class PostListView(ListView):
     template_name = "post/list.html"
     model = Post
 
